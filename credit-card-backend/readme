@@ -1,0 +1,39 @@
+# Credit Card Backend
+
+Este es un backend desarrollado con Node.js y Express, utilizando SQLite como base de datos local y Sequelize como ORM. El proyecto permite almacenar y obtener información de tarjetas de crédito de manera segura.
+
+## Características
+
+- Almacenar información de tarjetas de crédito.
+- Obtener todas las tarjetas almacenadas.
+- Base de datos SQLite local utilizando Sequelize como ORM.
+
+## Tecnologías Utilizadas
+
+- **Node.js**
+- **Express**
+- **SQLite**
+- **Sequelize**
+
+## Instalación
+    npm install
+
+
+
+## Ejecutar
+    node app.js
+
+## Endpoints
+### Crear tarjeta
+    URL: /api/cards
+    Método: POST
+
+    {
+        "cardNumber": "1234567890123456",
+        "cardHolder": "John Doe",
+        "expirationDate": "12/25",
+        "cvv": "123"
+    }
+### Leer tarjeta
+    URL: /api/cards
+    Método: GET
